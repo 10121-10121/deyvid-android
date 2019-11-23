@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="about_us_acercade">Acerca de...</string>
+    <string name="about_us_esta_es_una_app_para_ventas_y_reportes">Esta es una app para ventas y reportes</string>
+    <string name="about_us_autores">Autores</string>
+    <string name="about_us_deyvid_dastan">Deyvid Dastan</string>
 </resources>
