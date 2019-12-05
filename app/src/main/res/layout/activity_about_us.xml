@@ -5,33 +5,86 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AboutUsActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="33dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="30dp"
+            android:text="Acerca de Masha Tatto"
             android:textColor="@color/colorPrimary"
-            android:text="@string/about_us_acercade">
-        </TextView>
-        <TextView
+            android:textSize="20dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Vissión"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ser una empresa reconocida y prestigiada con el fin de lograr un conseguir un puesto en el más alto posicionamiento en la industria de tatuajes y piercings con accesorios novedosos y de primera calidad y diseños, cumpliendo con estándares que logren satisfacer a nuestros clientes."
+                android:textSize="10dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Misión"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Satisfacer las necesidades y deseos de nuestros clientes,
+brindando productos y servicios estéticos y de excelente calidad, y
+siempre velando por su salud con un personal capacitado para brindar
+soluciones que generen bienestar, compromiso y responsabilidad."
+                android:textSize="10dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/about_us_esta_es_una_app_para_ventas_y_reportes">
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/about_us_autores">
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/about_us_deyvid_dastan">
-        </TextView>
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:text="
+Razón Social: EST. D´ARTE CORP. MASHA TATTOO
+RUC: 10414107392
+Dirección: Calle Real N° 417 Int. A-04 - Huancayo
+Gerente: Masha Araujo Lagones
+"
+                android:textSize="10dp"></TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/aboutus"></ImageView>
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
