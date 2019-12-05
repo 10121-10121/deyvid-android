@@ -22,19 +22,20 @@ public class Users {
 
 
     public static List<Users> getUsers() {
-        ArrayList<Users> List = new ArrayList<Users>();
+        ArrayList<Users> list = new ArrayList<Users>();
 
         Users o = new Users();
         o.username = "bichito";
         o.password = "123456";
-        List.add(o);
+
+        list.add(o);
 
         Users t = new Users();
         t.username = "juanita";
         t.password = "123456";
-        List.add(t);
+        list.add(t);
 
-        return List;
+        return list;
     }
 
 }
