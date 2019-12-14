@@ -19,22 +19,20 @@ public class Users {
         return false;
     }
 
-
-
     public static List<Users> getUsers() {
-        ArrayList<Users> List = new ArrayList<Users>();
+        ArrayList<Users> list = new ArrayList<Users>();
 
         Users o = new Users();
-        o.username = "bichito";
+        o.username = "masha@gmail.com";
         o.password = "123456";
-        List.add(o);
+
+        list.add(o);
 
         Users t = new Users();
-        t.username = "juanita";
+        t.username = "oscar@gmail.com";
         t.password = "123456";
-        List.add(t);
+        list.add(t);
 
-        return List;
+        return list;
     }
-
 }

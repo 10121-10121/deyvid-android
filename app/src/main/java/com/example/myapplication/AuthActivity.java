@@ -8,33 +8,37 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.myapplication.models.Users;
 
 public class AuthActivity extends AppCompatActivity {
 
     Button btnLogin;
-    EditText txtUser;
-    EditText txtPassword;
+    EditText txtUsuario;
+    EditText txtContraseña;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
         btnLogin = findViewById(R.id.btnLogin);
-        txtUser = findViewById(R.id.txtUser);
-        txtPassword = findViewById(R.id.txtPassword);
+        txtUsuario = findViewById(R.id.txtUsuario);
+        txtContraseña = findViewById(R.id.txtContraseña);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if ( Users.passwordIsValid(txtUser.getText().toString(), txtPassword.getText().toString()) ) {
+                if ( Users.passwordIsValid(txtUsuario.getText().toString(), txtContraseña.getText().toString()) ) {
                     Intent o = new Intent(AuthActivity.this,
-                            MainActivity.class);
+                            menuActivity.class);
                     startActivity(o);
                 }
 
             }
         });
+
     }
+
+
 }
